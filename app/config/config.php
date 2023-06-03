@@ -6,7 +6,7 @@
 	define('DB_NAME', 'app_shareposts_db');
 
 	define('APPROOT', dirname(dirname(__FILE__)));
-	define('URLROOT', '/shareposts/public');
+	define('URLROOT', '/shareposts');
 	define('SITENAME', 'SharePosts');
 
 	define('APPVERSION', '1.0.0');	

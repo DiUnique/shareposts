@@ -10,12 +10,19 @@
     </ul>
 
     <div class="text-end">
-      <button type="button" class="btn btn-outline-light me-2">
-      <a href="<?= URLROOT; ?>/users/login" class="text-reset text-decoration-none">Login</a>
-    </button>
-      <button type="button" class="btn btn-warning">
-        <a href="<?= URLROOT; ?>/users/register" class="text-reset text-decoration-none">Sign-up</a>
-      </button>
+      <?php if (isset($_SESSION['user_id'])) : ?>
+        <p>Welcome, <?= $_SESSION['user_name'] ?>!</p>
+        <button type="button" class="btn btn-outline-light me-2">
+          <a href="<?= URLROOT; ?>/users/logout" class="text-reset text-decoration-none">Logout</a>
+        </button>
+      <?php else : ?>
+        <button type="button" class="btn btn-outline-light me-2">
+          <a href="<?= URLROOT; ?>/users/login" class="text-reset text-decoration-none">Login</a>
+        </button>
+        <button type="button" class="btn btn-warning">
+          <a href="<?= URLROOT; ?>/users/register" class="text-reset text-decoration-none">Sign-up</a>
+        </button>
+      <?php endif; ?>
     </div>
   </div>
 </div>
