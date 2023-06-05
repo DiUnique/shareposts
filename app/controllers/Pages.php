@@ -8,6 +8,10 @@
 	public function index()
 	{
 
+		if ( isLoggedIn()) {
+			redirect('posts');
+		}
+		
 		$data = [
 			'title' => 'SharePosts',
 			'description' => 'Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.'

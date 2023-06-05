@@ -7,12 +7,12 @@
       <h1 class="h3 mb-3 fw-normal">Please login</h1>
       <form action="<?= URLROOT; ?>/users/login" method="post">
         <div class="form-floating mb-2">
-          <input type="email" name="email" class="form-control <?= (!empty($data['email_err'])) ? 'is-ivalid' : '' ?>" id="floatingEmail" placeholder="name@example.com" value="<?= $data['email']; ?>">
+          <input type="email" name="email" class="form-control <?= (!empty($data['email_err'])) ? 'is-invalid' : '' ?>" id="floatingEmail" placeholder="name@example.com" value="<?= $data['email']; ?>">
           <span class="invalid-feedback"><?= $data['email_err']; ?></span>
           <label for="floatingEmail">Email</label>
         </div>
         <div class="form-floating mb-2">
-          <input type="password" name="password" class="form-control <?= (!empty($data['password_err'])) ? 'is-ivalid' : '' ?>" id="floatingPassword" placeholder="Password" value="<?= $data['password']; ?>">
+          <input type="password" name="password" class="form-control <?= (!empty($data['password_err'])) ? 'is-invalid' : '' ?>" id="floatingPassword" placeholder="Password" value="<?= $data['password']; ?>">
           <span class="invalid-feedback"><?= $data['password_err']; ?></span>
           <label for="floatingPassword">Password</label>
         </div>

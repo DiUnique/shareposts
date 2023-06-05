@@ -7,6 +7,7 @@
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
       <li><a href="<?= URLROOT ?>" class="nav-link px-2 text-secondary">Home</a></li>
       <li><a href="<?= URLROOT ?>/pages/about" class="nav-link px-2 text-white">About</a></li>
+      <li><a href="<?= URLROOT ?>/posts/index" class="nav-link px-2 text-white">Blog</a></li>
     </ul>
 
     <div class="text-end">
